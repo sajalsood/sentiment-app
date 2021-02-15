@@ -6,8 +6,10 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 import edu.sa.web.dto.SentenceDto;
+import edu.sa.web.dto.SentimentDto;
 
-@CrossOrigin in(origins = "*")
+
+@CrossOrigin (origins ="*")
 @RestController
 public class SentimentController {
 
@@ -21,7 +23,8 @@ public class SentimentController {
                 .getBody();
     }
     @GetMapping("/testHealth")
-    public String testHealth() {
-        return “hello world!”;
+    public String testHealth()
+    {
+        return "hello world!";
     }
 }
