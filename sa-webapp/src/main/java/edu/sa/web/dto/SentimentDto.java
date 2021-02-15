@@ -7,6 +7,7 @@ public class SentimentDto {
 
     public SentimentDto() {
     }
+
     public SentimentDto(String sentence, float polarity) {
         this.sentence = sentence;
         this.polarity = polarity;
@@ -17,14 +18,19 @@ public class SentimentDto {
     }
 
     public void setSentence(String sentence) {
+
         this.sentence = sentence;
     }
+
     public float getPolarity() {
+
         return polarity;
     }
+
     public void setPolarity(float polarity) {
         this.polarity = polarity;
     }
+
     @Override
     public String toString() {
         return "SentimentDto{" +

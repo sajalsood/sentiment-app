@@ -15,6 +15,7 @@ public class SentimentController {
 
     @Value("${sa.logic.api.url}")
     private String saLogicApiUrl;
+
     @PostMapping("/sentiment")
     public SentimentDto sentimentAnalysis(@RequestBody SentenceDto sentenceDto) {
         RestTemplate restTemplate = new RestTemplate();
