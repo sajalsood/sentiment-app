@@ -5,9 +5,10 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
+import edu.sa.web.dto.SentenceDto;
 
 @CrossOrigin in(origins = "*")
-@RestController ntroller
+@RestController
 public class SentimentController {
 
     @Value("${sa.logic.api.url}")
