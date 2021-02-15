@@ -24,5 +24,11 @@ def analyse_sentiment():
         polarity=polarity 
     )
 
+@app.route("/analyse", methods=['GET']) 
+def analyse_sentiment_get():
+    sentence = request.args.get('sentence')
+    polarity = TextBlob(sentence).sentences[0].polarity 
+    return str(polarity)
+
 if __name__ == '__main__': 
     app.run(host='0.0.0.0', port=5000)
