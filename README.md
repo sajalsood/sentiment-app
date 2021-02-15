@@ -3,7 +3,7 @@
 ## Authors
 
 - Sajal Sood sood.sa@northeastern.edu 001054338
-- 
+- Naresh Agrawal agrawal.nar@northeastern.edu 001054600
 
 ## Frontend
 
