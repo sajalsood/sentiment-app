@@ -1,5 +1,10 @@
 # Sentiment Analysis Application
 
+## Authors
+
+- Sajal Sood sood.sa@northeastern.edu 001054338
+- 
+
 ## Frontend
 
 ## Requirements
