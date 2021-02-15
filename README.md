@@ -1,7 +1,16 @@
 # Sentiment Analysis Application
 
+Frontend
+
+
 =====================================================
-Sentiment Analysis Logic
+
+Webapp
+
+
+=====================================================
+
+Logic
 
 ## Requirements
 
