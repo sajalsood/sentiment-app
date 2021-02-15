@@ -1,8 +1,6 @@
 # Sentiment Analysis Application
 
-Frontend
-
-# Sentiment Analysis Frontend
+## Frontend
 
 ## Requirements
 
@@ -29,7 +27,7 @@ http://localhost:3000/
 
 =====================================================
 
-Webapp
+## Webapp
 
 ## Requirements
 
@@ -75,9 +73,7 @@ The following API endpoint returns the analysis of the `sa-webapp` application. 
 http://localhost:8080/testSentiment
 ```
 
-=====================================================
-
-Logic
+## Logic
 
 ## Requirements
 
