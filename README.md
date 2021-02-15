@@ -39,9 +39,14 @@ http://localhost:3000/
 
 Make sure you have JDK installed. Navigate to the folder `sa-webapp`
 
+
+```bash
+mvn install
+```
+
 ## Start the application
 
-Run the application by running the following command:
+Navigate to the folder `sa-webapp\target`. Run the application by running the following command:
 
 ```bash
 $ java -jar sentiment-analysis-web-0.0.1-SNAPSHOT.jar --sa.logic.api.url=http://localhost:5000 
