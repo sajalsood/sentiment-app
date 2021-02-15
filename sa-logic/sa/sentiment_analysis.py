@@ -9,7 +9,6 @@ CORS(app)
 def hello():
     return "Hello from python sentiment analysis flask app!"
 
-
 @app.route("/testComms", methods=['GET']) 
 def verify_comms_local():
     response = requests.get("http://localhost:8080/testHealth") 
