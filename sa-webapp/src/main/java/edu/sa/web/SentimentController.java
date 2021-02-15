@@ -1,5 +1,6 @@
 package edu.sa.web;
 
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.beans.factory.annotation.Value;
@@ -24,8 +25,23 @@ public class SentimentController {
                 .getBody();
     }
     @GetMapping("/testHealth")
-    public String testHealth()
-    {
-        return "hello world!";
+    public String testHealth() {
+        return "hello from springboot webapp!";
+    }
+    @GetMapping("/testComms")
+    public String testComms() {
+        RestTemplate restTemplate = new RestTemplate();
+        ResponseEntity<String> result =
+                restTemplate.getForEntity(saLogicApiUrl + "/testHealth", String.class);
+//assertEquals(HttpStatus.OK, result.getStatusCode());
+        return result.getBody();
+    }
+    @GetMapping("/testSentiment")
+    public String testSentimentGet() {
+        RestTemplate restTemplate = new RestTemplate();
+        ResponseEntity<String> result =
+                restTemplate.getForEntity(saLogicApiUrl + "/analyse?sentence=i+am+so+happy!", String.class);
+//assertEquals(HttpStatus.OK, result.getStatusCode());
+        return result.getBody();
     }
 }
